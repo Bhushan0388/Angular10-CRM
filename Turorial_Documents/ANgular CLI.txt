@@ -1,0 +1,28 @@
+ANgular CLI (Command line interface tool)
+- it is used to initialze and maintain ANgular applicaion from a comman shell
+- We can run commands and make most of the work easily
+-
+
+Pre-requsite
+-Node JS
+-NPM
+- Visual Studio Code
+
+check version
+
+-- For Node version
+node -v
+
+-- NPM version
+NOM -v
+
+Installation of angular cli
+- Instal gloablly
+- nom i -g @angular/cli
+
+
+create new project 
+- ng new project
+
+- then go to that project
+- run ng server --open (default port 4200)

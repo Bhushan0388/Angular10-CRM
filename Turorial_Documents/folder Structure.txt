@@ -1,0 +1,32 @@
+-- Folder Structure
+
+<app-root> - is the tag where all the application data is bind
+
+main.ts - it tells what is the first thing it should start with 
+	- By default is AppModule - it is is app.module.ts
+	
+IF we want to change the bootstrap module where should we change
+	- Its in main.ts and we can update our bootstrap module
+
+Can we different module than app module
+	- Yes, We can have anyother module in our bootstrap
+	- It is not mandatory that it should be AppModule
+
+Polyfills.td
+	- use to support older browsers
+
+test.ts
+	- test script for main.ts file
+
+angular.json
+	- backbone of the application
+	-  it has all script , ports, settings
+	- scematics - angular clis- built test
+
+karma.conf.js
+	-test script runner
+	- Running /executing all our test scripts
+
+
+package.json and package-lock.json
+	-

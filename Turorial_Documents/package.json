@@ -1,0 +1,17 @@
+Package.json
+	- All our commands gets invoked / defined here
+	ng serve 
+	- will go to angular.json
+
+Can we add more scrips in package.json
+- Yes,
+
+WHat is dependenies 
+- all modules /libraries we must run in prod enviornment
+- Production code will be mostly optimized/minimized
+
+WHat is devdependencies
+- akk the modules/li we must have to devlop our app
+- we may add package / modules but we may not use them
+
+************ Package-lock.json

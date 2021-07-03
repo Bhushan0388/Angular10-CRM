@@ -1,0 +1,19 @@
+Install Bootstrap
+- CDN network
+	- We copy the url in index.html file
+- using npm 
+	- npm i bootstrao jquery popper --save
+
+once we insatll we can verify it in package.json file
+
+***************IMPORTANT******************
+
+Now we need to update angular.json
+- in styles enter this command
+	"./node_modules/bootstrap/dist/css/bootstrap.min.css"
+- under scripts enter below command
+	"./node_modules/bootstrap/dist/js/bootstrap.min.js"
+	"./node_modules/popper/index.js"
+	"./node_modules/jquery/dist/jquery.min.js"
+
+Restart Application

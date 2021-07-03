@@ -1,0 +1,25 @@
+Booting process
+
+we run ng serve
+	- it first compile the app
+	- there is one file call main.ts which starts with booting process
+	- In this we have BootstrapModule where it is stated to start the application with appmoddule
+	- We can modify the by updating the AppModule with some other Module
+
+Once we do the change we need to test it too in test.ts
+
+test.ts
+	-test script in main.ts
+
+what is selector : what ever we define in compnent i.e. tempalte styleUrls it should come under selector
+
+in Indesx.html
+it will go to AppModule
+in AppModule in bootsrap it will go in AppComponent
+in AppComponent it will use selector <app-root>
+
+Whenever we run ng serve/build/test
+- Typescript is converted into javascript which is also called as transpiling
+- it will generate main.js, vendor.js, pollifills.js,style.js, runtime.js
+-
+-
