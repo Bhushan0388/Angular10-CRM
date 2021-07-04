@@ -1,0 +1,35 @@
+Temaplate in components
+	- 4 files
+		- template (.html)
+		- style.css(stylesheet)
+		- class (component.ts)
+		- spec (unit test file)
+
+Component Decorator
+	- IT give defination and meaning to it
+	- it has prefix of @
+
+- By default ANgular will add "app" as prefix
+	- selector -> uniquie identifier of components
+	- we write <tags>
+
+Q: Can we change the default "app" prefix
+A:  we can change it through out the app
+	- Go to angular.json -> change prefix
+
+Q: what will happen if we change?
+A: Nothing Happens, we just need to update it 
+
+Q: what your app work or will it crash?
+A: IF we have updated in necessary component with latest
+
+- Templateurl
+	- Its always one html file
+
+Template
+	-we will use "backtick: and not the single quotes
+	- backtick key can be found on left top side `(below esc)
+
+-styeUrls 
+	- it is an array 
+	- it can take mulitple stylesheets

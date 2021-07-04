@@ -1,0 +1,28 @@
+First create Modules
+Then create Components under it
+- COmponents are important and basic building blocks of ANguar apps
+- Authentication
+	- new- user
+	- login
+	- forgot-password
+	- rest-password
+	-
+- WHen we group multiple components it becomes a module
+- We can have parent child relationship of components
+- We can have compinents inside components
+- Tree Herirache components
+
+- Every components have 4 files auto-generated
+	- component.html - HTML page
+	- compnent.ts file - class file which will have logic
+	- component.spec.ts - Unit test script
+	- component.scss - Styling 
+
+- Component decorator inside the component.ts file
+	- selector 
+		- > unique identifier for the component.
+		- > using this selector we will use the component.
+	- templateURL - > html file
+	-  styleUrl - > will give ath of you styling
+
+

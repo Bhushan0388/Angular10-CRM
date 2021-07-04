@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'CRM';
+
+  title = 'CRM1';
+
+  show_message=true;
+  show_flag=false
+
+  contacts=[
+    {
+      'firstname':'bhushan',
+      'lastname':'k',
+      'contactid':'1'
+    },
+    {
+      'firstname':'test',
+      'lastname':'k',
+      'contactid':'2'
+    },
+    {
+      'firstname':'hh',
+      'lastname':'k',
+      'contactid':'3'
+    }
+  ]
 }

@@ -1,0 +1,16 @@
+ngif
+- It will always have (*)astrisk mark
+-built in structural directives
+- we can use logical operators inside ngif
+- we can hvae mulitpele use case
+	-ngif
+	- ngif else
+	- nfif then else
+
+ngfor
+-- syntax <div *ngFor="let e of collection"></div>
+-Prodcides local variables in array data
+	- index - gets the current index of the current element in iteration
+	- First - returns true if the current element is the first element in the iteration
+	- Last - returns true if the current element is the last element in the iteration
+	- Odd -returns true if the current element is the odd element in the iteration

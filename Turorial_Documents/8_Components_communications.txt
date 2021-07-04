@@ -1,0 +1,20 @@
+Communication between Compnents
+
+- Communcation between related components
+	- parent components -> Child components
+		-@Input
+	- parent components <- child components
+ 		- @Output
+	
+e.g 
+	Lead Module
+		- leads-Listing
+			- leads-grid
+			- leads -tool
+				- download-excel
+				- download-pdf
+
+- Communication between unrelated components
+	- Component1 -> Service <- Component2
+		- Services 
+		        - is a comman reusable piece of functionality shared between diferent components

@@ -1,2 +1,39 @@
 <h1>{{title}}</h1>
+
+<!-- Start if conditions -->
+<div class="bg-success" *ngIf="show_message">
+    User added succesfully
+</div>
+
+<div class="bg-success" *ngIf="show_flag && show_message">
+    User added succesfully
+</div>
+<!-- END if conditions -->
+
+
+
+<!-- Starts IF ELSE condtion -->
+<div class="bg-success" *ngIf="show_message;else error_msg">
+    User added succesfully
+</div>
+
+<ng-template #error_msg> User not added</ng-template>
+
+<!-- ENDs IF ELSE condtion -->
+
+
+
+<!-- Starts IF then ELSE condtion -->
+<div class="bg-success" *ngIf="show_message;then updated_message else error_msg">
+    User added succesfully
+</div>
+
+<ng-template #updated_message> User Updated  </ng-template>
+<ng-template #error_msg> User not added</ng-template>
+
+<!-- ENDs IF ELSE condtion -->
+
+
+
+<!-- ************for loop -->
 <router-outlet></router-outlet>

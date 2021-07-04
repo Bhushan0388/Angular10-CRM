@@ -1,0 +1,56 @@
+WHich every lifecyle hook we want to use 
+- import it in class
+- Extends the implements interface
+- Implement the method
+
+e.g 
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-add-contact',
+  templateUrl: './add-contact.component.html',
+  styleUrls: ['./add-contact.component.scss']
+})
+export class AddContactComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
+**************** 8 Life Cycle hooks***************
+
+ngOnChanges()
+	- used in anycomponent that has input
+	- is called the first time before ngOnInit()
+
+ngOnInit()
+	- Used to initalized data in a component
+	- Called after input values are set when a component is initialized
+	- Called only once
+
+ngDoCheck()
+	- Called during all change detection rins
+	- Wheneve there is change in view it will detecth
+
+ngAfterContentInit()
+	- Called only once after first ngDoCheck()
+	
+ngAfterContentChecked()
+	- Called after every ngDoCheck()
+	- Waits till after ngAfterContentInit() on first run through
+
+ngAfterViewInit()
+	- Called only one after view is initialzed
+
+ngAfterViewChecked()
+	- Called after all the content is initialized and checked
+	- First call after ngAfterVirwIniti()
+	- This is called after evry ngAfterContentChecked() call is complete
+
+ngOnDestroy()
+	- Used to clean up any necessary code when a component is removed from DOM
+	- Often used to unsubscribe from things like services
+	- Called only once just before component is removed from DOM.

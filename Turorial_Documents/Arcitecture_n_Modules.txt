@@ -1,0 +1,33 @@
+Modular based achitecture
+- ANgular is based on architecture
+	- There are lots of module which are built-in
+	-Example : BrowserModule, BrowserAnimation, AppRouting
+
+- All the functionality are groped in a module
+- Every Module starts with @ - its a decorator
+- @NgModule
+	WHat Modules consists
+	- declarations
+		- This where we add the components of the modules
+	- imports
+		- We can imports modules in moduels
+	- providers
+		- Services that we need will be injected here
+	- Bootstrap
+		- What is the first component , the module should lead
+	-exports
+		- is to export and expose the component outside the module
+
+- Every Angular application should atleast have 1 module
+- By default, ANgular framkework provides us the AppModule
+- This AppModule will have one component by the name "AppCompnent"
+- Whenever we are buidling Angular appications
+	- We will always think of Modules first
+
+- Feature modules
+	- We can turn off and show the modules
+- Modules Grouping 
+	- component 
+	- service
+-	- pipes
+	- directives

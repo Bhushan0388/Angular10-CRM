@@ -1,0 +1,23 @@
+What is Angular DIrective?
+- Angular directives are used to extend the power of HTML by givng new syntax
+- Directives can stend, change aor modify behaviour of the DOM elements
+
+Types of DIrectives
+- Components Directives
+	- Every ANgular applicarion must have atleast 1 component
+	- have its own template
+	- Events atached
+
+Structural Directives
+	-Update structure of the view
+	- ngFor,ngIf and ngSwitch
+
+Attribute Directives
+	-ngStyle, ngClass
+
+How can we generate directives?
+- ng generate component <component-name>
+- ng generate directive <directive-name>
+
+How can you create Custom Directives?
+- ng g directive<highlist>
