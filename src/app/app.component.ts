@@ -29,4 +29,7 @@ export class AppComponent {
       'contactid':'3'
     }
   ]
+
+  superPower="IronMan" // string 
+  tax=10
 }

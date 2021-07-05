@@ -1,5 +1,6 @@
 <h1>{{title}}</h1>
 
+<h1>If Loop </h1>
 <!-- Start if conditions -->
 <div class="bg-success" *ngIf="show_message">
     User added succesfully
@@ -33,7 +34,40 @@
 
 <!-- ENDs IF ELSE condtion -->
 
-
+<H1>For Loop</H1>
 
 <!-- ************for loop -->
+<ul>
+    <li *ngFor="let contact of contacts; index as i; first as f;last as l">
+        <div *ngIf="f" style="background-color: salmon;">This is first record</div>
+       <div>{{i}} {{contact.firstname}}  {{contact.lastname}}</div>
+       <div *ngIf="l" style="background-color: yellowgreen;">This is last record</div>
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let contact of contacts; index as i; even as eve;odd as od">
+        <div *ngIf="eve" style="background-color: salmon;">{{i}} {{contact.firstname}}  {{contact.lastname}}</div>
+       <div *ngIf="od" style="background-color: yellowgreen;">{{i}} {{contact.firstname}}  {{contact.lastname}}</div>
+    </li>
+</ul>
+
+
+<!-- ******************* Swtch Case -->
+<h1>Switch Case</h1>
+<div [ngSwitch]="superPower">
+    <div *ngSwitchCase="'WonderWoman'">This is Wonder Woman</div>
+    <div *ngSwitchCase="'Superman'">This is Super MAN</div>
+    <div *ngSwitchCase="'Spiderman'">This is Spiderman</div>
+    <div *ngSwitchDefault >Learning</div>
+
+</div>
+
+<div [ngSwitch]="tax">
+    <div *ngSwitchCase="20">This is 10</div>
+    <div *ngSwitchCase="10">This is 20</div>
+
+</div>
+
+
 <router-outlet></router-outlet>

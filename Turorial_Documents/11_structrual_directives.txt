@@ -13,4 +13,17 @@ ngfor
 	- index - gets the current index of the current element in iteration
 	- First - returns true if the current element is the first element in the iteration
 	- Last - returns true if the current element is the last element in the iteration
+	- Even -returns true if the current element is the even element in the iteration
 	- Odd -returns true if the current element is the odd element in the iteration
+
+ngSwitch 
+- its a build in directive and starts with [] brackets
+- Allows element to be shown or hide based on a condition expression
+- Unlike if statement - it can take multiple parameters to do multple checks
+- We can also define a default actions for the swtch
+There are 3 main elements of swtich case
+	- ngSwitch
+	- ngSwitchCase
+	- ngSwitchDefault
+
+If the values are string then it should be enclosed between ''(single quotes)
