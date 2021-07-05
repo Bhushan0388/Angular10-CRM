@@ -70,4 +70,24 @@
 </div>
 
 
+<h1>NgSTyle</h1>
+<div [ngStyle]="{'background-color':'green','color':'white' }">Green</div>
+
+
+<h1>Dynamice styling</h1>{{mycolor}}
+<div [ngStyle]="{'background-color':mycolor}">Green</div>
+
+<h1>COnditional ngSTyle</h1>
+<div [ngStyle]="{ 'color': txtcolor == 'blue'? 'blue' : 'green' }">Condition DIV</div>
+
+
+<h1>NgClass</h1>
+<div [ngClass]="'c1'">This is ngClass Example</div>
+
+<h1>NgClass</h1>
+<div [ngClass]="'c1 c2'">This is multiple class</div>
+
+<h1>NgClass Object</h1>
+<div [ngClass]="{'c1': true, 'c2': false}">This is Object class</div>
+
 <router-outlet></router-outlet>

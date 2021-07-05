@@ -1,0 +1,15 @@
+NgClass
+- We can pass multiple class
+- We can pass strings, arrays. objects
+
+basic
+<div [ngClass]="'c1'">This is ngClass Example</div>
+
+multiple classes
+<div [ngClass]="'c1 c2'">This is multiple class</div>
+
+dynamic
+Conditional
+
+Object
+<div [ngClass]="{'c1': true, 'c2': false}">This is Object class</div>

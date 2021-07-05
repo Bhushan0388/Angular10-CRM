@@ -1,0 +1,13 @@
+ngStyle
+- let us to set a give DOM elements styleproperties
+- We can pass dynamic values via variables
+e.g <div [ngStyle}="background-color:value">Example</div>
+
+Basic usage
+-<div [ngStyle]="{'background-color':'green','color':'white' }">Green</div>
+
+DYnamic usage
+<div [ngStyle]="{'background-color':mycolor}">Green</div>
+
+Conditional operator
+<div [ngStyle]="{ 'color': txtcolor == 'blue'? 'blue' : 'green' }">Condition DIV</div>

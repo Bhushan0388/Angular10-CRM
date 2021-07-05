@@ -11,6 +11,9 @@ export class AppComponent {
 
   show_message=true;
   show_flag=false
+  
+  mycolor="red";
+  txtcolor="blue";
 
   contacts=[
     {
@@ -32,4 +35,6 @@ export class AppComponent {
 
   superPower="IronMan" // string 
   tax=10
+
+
 }
