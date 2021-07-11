@@ -1,0 +1,42 @@
+Angular Router
+	- Used to navigate between various Views
+	- Found under @angular/router
+	- 
+Types of Routes
+	- Routes of component
+		- ex: http//myapplication/profile
+	- Getting QUery Params fromm routes
+		- ex: http//myapplication/search?user=abc
+	- Getting the URL segments
+		- ex : http//myapplication/task/10/category/pending
+	- Loading child routes for a module
+		ex : ttp//myapplication/user // Module
+			Child routes
+			-  http//myapplication/user/view/10
+			-  http//myapplication/user/edit/10
+			-  http//myapplication/user/add
+	- Lazy Loading
+	- Handle Wild card routes
+	- Handle default routes
+	- Handle 404 routes
+		ex :  http//myapplication/PageNotfound
+
+Router-Outlet
+	-it is built in directives
+	- Every Angular should have alteast one router-outlet
+	- By default router outlet is define in app.component.html
+	- It wll match the routes for the components and take output and place it inside routeroutlet tags.
+	- We can have multple router-outlet 
+
+Multip;e Router outlet
+	- we can define muotle routers outlets by giving name to them
+	- we called them by names router outlets
+	- ex : { path :'add'
+	           component: 'addcomponent',
+	           outlet : 'outlet'
+	- It will not work if you try to access directly
+	- to make it work we need to use below path
+		- http://localhost:4200//<primary-route>( <router-name>: <secondaryPath>)
+	- if we dont define the name then it will take default
+	-
+	          '
