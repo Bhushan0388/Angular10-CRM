@@ -1,0 +1,18 @@
+Pipes
+	- Are used to transform the data 
+	
+Types:
+	- Built-in
+		- lowercase
+		- uppercase
+		- currency
+		- Date
+
+	Parameterixed Pipe
+		- We can pass one or more to pipes
+		- We pass prameter using colon symbol(:)
+		- Syntax {{parameter_name | Pipe_name : "type we want"}}
+	- Chaining Pipes
+		We can connect multiple pipes
+	- Custome Pipes
+		- We can create our own.

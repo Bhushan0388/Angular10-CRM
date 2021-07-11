@@ -1,0 +1,44 @@
+Data Binding 
+	- Means binding the data from view to component
+	- Defines how the data flows and how the data gets updated based on business logic
+
+One way Data Binding
+	- Component to View
+		- Interpolaction
+			- Defined in double currly braces
+			- {{}}
+
+		- Property Binding
+			- We write it in square bracket [property_name]=" "
+			- We can bind multiple to any HTML DOM elements.
+			- Can be used for all properties like tilte, src, Placeholder, innerHTML
+			- 
+		- Style Binding
+		- Attribute Binding
+			-  it is the technieuw which allows the user to bind attributes.
+			- Can be used for any existing properties or custome attributes
+			- syntax: [attr.attibute_name="expression"
+			- difference bwteen property and attribute binding
+				[ngClass]="expression" // property binding
+				[attr.ClassName]="expression // attribute biding
+			- some attributes are not native supported for elements
+				- colspan
+			- Angular encorages to property binding
+				- fro some we have to use attributw
+
+	- View to Component
+		- Event Binding
+			-  syntax : <button (event_nm)="function()">test</button>
+			- events like click, mouseover, focus
+
+Two-way data Binding
+	- Data Flows from View to component and back to component to view	
+		- Combination of property binding and event binding.
+		- Syntax : [(NgModel)]='data'    it is also called as (Banana Syntax)
+		
+			Erros which we can get in Two way binding
+			-  Property doesnt exisits"
+				- if we dont declare the variable in component it will throw and error. " 
+			- " Cannot bind to ngModel since it isnot a known property"
+				- AS we have not imported FormsModule in our AppModule
+				- Import Forms Module in you AppModule
