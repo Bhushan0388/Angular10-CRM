@@ -1,0 +1,16 @@
+Base Href 
+	- It is mandatory for all ANgular apps.
+	- It is present in your index.html file
+	 <base href="/">
+	- This href="/" indicates that it is pointing to the "root " directory folder of your server which is running.
+	- If we want to change it to different folder path then we need to change it in index.html
+		- root folder url
+			http://myapp.com/
+		if we modify  <base href="/app1">
+			http://myapp.com/app1/
+
+It decides where we want to deploy our app
+	- its extremly important
+
+Differernt ways to do it
+	-ng build --base-href="<path>"

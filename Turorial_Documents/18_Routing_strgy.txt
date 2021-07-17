@@ -1,0 +1,36 @@
+Routing Strategy
+	- Routing behaviour of the application URLs.
+	- ANgular provides 2 type of routing strategies
+		- pathLocationStrategy
+			- Default routing strategy for ANgular apps.
+			- SImple, bookmarkable, easy to remember.
+			- default HTML 5 push state URL
+			- ex: 
+				http://myapp.com/dashboard/
+		- HashLocationStrategy
+			- URL segments/patterns
+			- URL's will have in the hash in the URL's
+			- We need to import HashLocationStrategy from @angular/core
+				import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+			- Add it to providers array in app.module.ts
+
+				providers: [{
+  				  provide:LocationStrategy, useClass:HashLocationStrategy
+  				}],
+
+			- Once it is loaded Angular starts using # in URL
+			- URL ex: 
+				http://myapp.com/#/dashboard/
+
+Why do we need 2 different type of routing?
+	- ANgular is a SPA(single page application)
+		- index.html
+	- When we are deploying it on cloud (AWS,GCP,Azure) it will treate path as folder.
+	- useing # it will consider as it will consider as part of index path --index.html/#/loans.
+
+Which one we should use when?
+	- No difference 
+	- while deployments
+		- we will face issue -> # -> loans
+

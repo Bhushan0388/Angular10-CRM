@@ -1,0 +1,23 @@
+Parameterized Routes is also called as Dynamic Routes
+	-We can send dynamice data or parameter
+	- Url will look something like below
+		http://localhost.com/user/10 > get user with id as 10
+		http://localhost.com/search/ka/banglore > search by state and city
+		http://localhost.com/user/10/photos/34 > user id is 10 and photo id is 34
+	 
+	- while writing dynamice URL/Params make sure we write colon(:) in URL
+ 		 {
+  		  path:'product/:id/photo/:photoId',component:ProductComponent
+  		}
+	- Import the ActivatedRoute class
+	- Create an object in constructor
+
+		 constructor(private activatedRoute: ActivatedRoute) { 
+   			 this.activatedRoute.params.subscribe((params)=>{
+   				   console.log(params);
+     				 this.photoId= params.photoId;
+      				this.id=params.id;
+
+   		 })
+
+	 we can creaet any number of params in the usrl

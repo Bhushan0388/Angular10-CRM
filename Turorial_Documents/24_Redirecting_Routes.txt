@@ -1,0 +1,8 @@
+Redirecting Routes
+	- BY default the root level route is ''
+	- reditectTo and specify which route it has to go
+	{	
+		path:'',
+		redirectTo:'home',
+		pathMatch:'full'
+	}

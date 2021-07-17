@@ -1,0 +1,11 @@
+Query paramters
+	-We can send data from Form ->
+	 We can have data from click  ->
+
+	     Syntax: 
+		http://localhost.com/search?key=10&state=ka&city=banglore
+	
+	- Query Params > visible in the URL
+	- Mostly used for searching or filtering the data etc.
+
+	

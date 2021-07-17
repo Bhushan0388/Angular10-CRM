@@ -1,0 +1,22 @@
+Routung Module/ App routing module
+	- Its a single module and placeholder where all our routes  are configured for that 
+	- each module can have its own routes
+	- During the angule app installation
+		- We get an option which will create an routing module
+	- Syntax:
+		ng g m app-routing --flat -module=app
+
+Include the routing from scratch
+	- Run abve command
+	- Now import modules from package
+		import { RouterModule, Routes } from '@angular/router';
+	- We need to configure route path array in the file
+		const routes: Routes = [];
+	- We need to define(Dependecy injetion ) our module using @NgModule
+		@NgModule({
+		  imports: [RouterModule.forRoot(routes)],
+		  exports: [RouterModule]
+			})
+	- We need to export the module
+		export class AppRoutingModule { }
+	- Now include module in AppModule file.

@@ -1,0 +1,5 @@
+Wild Card ROutes
+	 ANy unmatched route will be intercepted by wild card route
+	- this has to be the last route 
+	- we define it by saying the path as astrick(**)
+	syntacx

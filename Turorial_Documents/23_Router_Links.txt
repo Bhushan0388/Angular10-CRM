@@ -1,0 +1,16 @@
+Router Links
+	- we can have anu number of router links in the template
+	 Router links can be static or can be dynamic in nature
+
+Statuc ROuter Link
+	-  Syntax : 
+	= <a [RouterLink]="'/user'"
+
+Dynamice Router Lins
+	- Syntax:
+		<a [routerLink]="['/edit',client.id]">Edit</a>
+
+Common Mistakes
+	- Not putting strings in single quotes
+	- Not passing dynamic data correctly
+	- We dont have to place "/" in routerLink

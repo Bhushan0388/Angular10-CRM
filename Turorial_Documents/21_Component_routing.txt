@@ -1,0 +1,21 @@
+ Configuration of components route options
+	- There are various options to do so
+		- path
+		-component
+		- children
+		- Outlet
+		- redirectTo : in this it will jump towards defined path and it will call that component
+			syntax: redirectTo:'' 
+			ex:
+				const routes: Routes = [
+  				{
+  					  path:'loans',
+   					 redirectTo:'add-loan'
+ 				 },
+ 
+  				{
+  					  path:'add-loan',
+   					 component:LoantypesComponent
+  				}
+				];
+		- pathMatch:

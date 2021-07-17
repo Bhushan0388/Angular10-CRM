@@ -1,0 +1,46 @@
+ANgular Routing - Component Routing
+
+Common Mistakes 
+	- devloper woll add "/" path
+	- Component name in quotes
+	- Bad form array of routes
+	- Sometimes our editor are not importing components correctly.
+	- Red color underline is that there is an error.
+
+Router Outlet
+	- It is an built in directive
+	- Every angular app should have atleast 1 router outlest
+		- Primary router outlet
+	- by default - router outlet is defined in app.component.html file
+	- Router outlet will match the matchin routes for the components
+		- takes its output
+			- inside the page
+	- Multiple router outlest in application
+		- We can have more than 1 router outlet
+	
+Multiple Router
+	- There should be only 1 primary
+	- We can define multiple router outlest by  giving name to them
+	-- That's whey we call them names router outlets
+	- We can give any name we want (give meaningful name)
+	- if in routing model if we dont mentioned th ensame it will be primary by default
+		{
+   		 path:'add-loan',
+	  	  component:LoantypesComponent,
+  		  outlet:'outlet1'
+		  }
+	 - it will NOT show if you directly access it in the URL.
+	- We can acess with below URL
+		SYntax:
+
+		localhost:4200/<primary-router>(<router-outletname>:secondary path) 
+		Example :
+		localhost:4200/loans(outlet1:add-loan)
+
+Why we need multiple routers
+	- Avoid useing this use case in application.
+	- we can inject components
+	- URL is not friendly.
+	
+
+
