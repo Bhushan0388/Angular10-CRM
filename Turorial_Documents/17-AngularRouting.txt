@@ -41,6 +41,3 @@ Why we need multiple routers
 	- Avoid useing this use case in application.
 	- we can inject components
 	- URL is not friendly.
-	
-
-

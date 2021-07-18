@@ -1,0 +1,37 @@
+Lazy Loading
+	- Angular application made up of multiple Modules
+	- ANgular by default will loads all modules at start
+	- Loading all module s initially  wheather or not
+		- which makes application slow
+		- Also its an bad idea to expose the modules which user is not going to use
+		- user should not see/use
+
+Lazy Loading here comes into the picture
+	- Initially we will load only module which are mandatory
+	- Rest we will serve as requested
+	- We will route for each module
+	- it will help in keeping your builds smaller
+
+From Angular 8, Syntax has changed
+	- Please use the dynamice functions
+
+The modules generated using the ANgular CLI for lazy loading
+	- there will be no entry in AppModule
+	- which means it will not be loaded initially.
+
+Steps
+	 ng g module <modulename> --route <moduleroute> --module app.module
+
+	Ex. ng g m payments --route payments --module app.module 
+
+	- above command will generate the following
+		- A routing module for the module
+		- A module file
+		 - Component
+			 html, csss,specs, class
+		- It will update the app.module
+
+Whenever we hit '/payments'
+	- it will load module on demand
+	- if you want to multipe components then syntax will be
+		/payments/success

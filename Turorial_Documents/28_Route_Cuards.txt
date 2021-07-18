@@ -1,0 +1,21 @@
+28_Route_Guards	
+	- Helps us to secure our routes and screes
+	 - ex: 
+		-user -> Admin -> Route Guard
+				-> Custom Logic
+					-> True
+						->can access the route
+					->False
+						-> custom logic on failure  
+
+Syntax:
+	ng g guard <guardname>
+
+- Route Guards have something called "interfaces"
+	- canActivate - checks if user can visit a route (authorization)
+	- canActivate - Cchecks to see if a user can visit its child
+	- canDeactivate - check if user can exit the route
+	- canLoad - can lazy loading module be  loaded by user
+	- resolve - route data retrival before route activiating 
+
+- we can implemenr more than 1 guards as it is array.

@@ -1,0 +1,18 @@
+CanActivate
+	- use ng g guard <guard-name>
+	- choose the option CanActivate
+	- in the routing module  we will use option canActivate
+		 it will resolve to true and false
+		- true means : user can access the routes
+		- flase means : use cannot access the routes
+	- we can use any number of guard on CanActivate as t
+		- In case of multiple guards : All guards should be true to make it work
+
+Use cases
+	-  checks if user can loggin
+	-  checks if user can Edit the product
+	-  check if the user is admin
+
+
+***************CanActivateChild************
+
