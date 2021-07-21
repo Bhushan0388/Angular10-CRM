@@ -1,0 +1,5 @@
+<form #addCustomerForm="ngForm" (submit)="addCustomer(addCustomerForm)">
+    <input type="text" [(ngModel)]="firstname" name="firstname" placeholder="First Name">
+    {{firstname}}
+    <button type="submit">Add Customer </button>
+  </form>

@@ -1,0 +1,22 @@
+Template Driven Forms
+	- easy to use
+	- Template driven forms are simple and straight forward
+	- All validation, form elements are defined in the template file.
+	- We will need to import FormsModule in app module to work with Template driven forms
+	- Tracked form data traverses via various states(pristine, etc)
+	- Uses Two way data binding techniques to bind data
+	- Most of the codes resides in template file
+	- Validations are mostly the default HTML5 validations
+	- Minimal component code as most of the code is in template file
+	- Unit testing will be challenge 
+
+STeps to process Template Driven Forms
+	- Impor and add the FormsMoudle in app.module.ts
+		- FormsModule needs to be imported 
+		- If we dont import this we will get rror when doing two wasy binding 
+		- Add the module into the array list if imports
+
+	- ngForm	
+		- Form Name as template variable using '#' for eg: #loginForm
+	- ngModel
+		- Every form field should have a "name" attribute and ngModel attached to it.

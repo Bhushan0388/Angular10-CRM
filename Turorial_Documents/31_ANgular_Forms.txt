@@ -1,0 +1,31 @@
+ANgular Forms
+	- Static/Template Driven Forms
+	- Dynamic/ Reactive Forms
+
+Static/ Template Driven
+	- easy to use
+	- Template driven forms are simple and straight forward
+	 - All validation, form elements are defined in the template file.
+	- We will need to import FormsModule in app module to work with Template driven forms
+
+Dynamic/ Reactive /Model Driven Forms
+	- All the form elements, user interaction and validations are handled in the component class.
+	- We will make use of Angular's built in formGroup and formControl
+	- Can control better data binding
+	- Exclusive deine custom regular expression patterns of error handling 
+	- We will need t import ReactiveFormsModule in our app module
+	- Very flexible and allows user to define, develop complex requinemnt of forms
+	- More logi in the component class and less in HTML markup itself.
+
+WHICH is BETTER? 
+Template Driven Forms
+	- If our application forms are simple straight forward 
+	- Fixed static form fileds and elements
+	- No complex validations or pattern matching
+
+Reactive Forms
+	- If our application forms are complex
+	- Uses multiple dynamic components
+	- Advance validation requinemnts
+	- Dependent form elements
+	- Dynamic form generation based on user preference	-

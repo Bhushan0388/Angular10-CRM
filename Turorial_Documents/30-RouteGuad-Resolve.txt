@@ -1,0 +1,31 @@
+Resolve GUard
+	- Resolve route guard allows us to provide data needed for a route
+	- If somedata is Mandatory for a component  try using the logic from ngOnit to resolve
+	- Using the activatedRoute.snapshot.data we can access data and process it.
+
+
+Points to remeber 
+- when we run the guard command resolve is not present in the list so we can select any one guard
+- later modfiy it wih resolve as below
+
+	  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot){
+  	  return this.userObj;
+  	}	
+
+-Then do the changes in route
+	    // resolve data is loaded before route is activated
+   	 path:'loans',
+   	 component:LoansComponent,
+  	  resolve:{
+    	  data:ResolverGuard
+   	 }
+ 	 },
+
+- Then it above comopnent user below content
+	 constructor(private activatedRoute:ActivatedRoute) {
+	   }
+
+	  ngOnInit(): void {
+	    console.log(this.activatedRoute.snapshot.data);
+
+	  }
