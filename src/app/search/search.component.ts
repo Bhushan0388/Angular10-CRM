@@ -24,4 +24,7 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // check if form is dirty
+  isDirty=true;
+
 }

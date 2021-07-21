@@ -9,9 +9,11 @@ import { AdminComponent } from './admin/admin.component';
 import { ClientsComponent } from './clients/clients.component';
 import { LoansComponent } from './loans/loans.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PreferenceCheckGuard } from './preference-check.guard';
 import { ProductComponent } from './product/product.component';
 import { SearchComponent } from './search/search.component';
 import { SuperAdminGuard } from './super-admin.guard';
+import { UnsavedGuard } from './unsaved.guard';
 
 const routes: Routes = [
   {
@@ -37,9 +39,10 @@ const routes: Routes = [
   },
   {
     path:'search',
-    component:SearchComponent
+    component:SearchComponent,
+    canDeactivate:[UnsavedGuard]
   },
-  { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
+   
   
   { path:'admin',
     canActivate:[SuperAdminGuard],
@@ -60,6 +63,9 @@ const routes: Routes = [
 
           ]
   },
+  { path: 'preferences',
+    canLoad:[PreferenceCheckGuard],
+   loadChildren: () => import('./preferences/preferences.module').then(m => m.PreferencesModule) },
   {
     path:'**',
     component:PageNotFoundComponent

@@ -15,4 +15,21 @@ Use cases
 
 
 ***************CanActivateChild************
+Similar to CanActivate but in this provides guard to its child
 
+****************Can Load******************
+This protects the route completely. Such as lazy loading the module and also protects all the routes associated with that module
+
+First generate lazy loading
+ng g m preferences --route preferences --module app.module
+
+then create guard using below command and select CanLoad
+
+ng g guard preferenceCheck
+
+******************Can DeActivate********************
+	-  WHen we want to make sure that user can deactivate a particular route we will use canDeactivate
+	-  Interface that a class can implement to be a guard deciding if a route can be deactivated
+	- If all guards return true, navigation continoues. If a guard returns false navigation is cancelled.
+	 we write the method for it
+	-  CanDe
