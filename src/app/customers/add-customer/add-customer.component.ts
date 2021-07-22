@@ -8,17 +8,34 @@ import { NgForm } from '@angular/forms';
 })
 export class AddCustomerComponent implements OnInit {
 
- 
+
 
   constructor() { }
-   firstname: string = "Bhushan";
+  firstname: string = "Bhushan";
+  terms: boolean = false;
+  customerType: string = "";
+  descriptions: string = "";
 
   ngOnInit(): void {
-  }
-
-  addCustomer(frovalues: NgForm){
-    console.log(frovalues.value);
     
   }
 
+  loadvalues(frovalues: NgForm){
+    let userData = {
+      firstname : "Bhushan",
+      terms : false,
+      customerType : "",
+      descriptions:"My Data"
+    }
+  frovalues.setValue(userData);
+  }
+
+  addCustomer(frovalues: NgForm) {
+    console.log(frovalues.value);
+
+  }
+
+  reset(frovalues: NgForm) {
+    frovalues.reset();
+  }
 }
