@@ -1,0 +1,32 @@
+Reactive Forms - Form Control and Form Groups
+
+Core things of reactive Forms
+	-FormControl - Each element(input,button,checkbox etc) is called as FormControl
+	-FormGroup - Grouping formcontrols are call as FormGroup
+	-FormBuilder - Abstration layer which makeus to design easily and build our forms
+		- it have 3 importan thing
+			- FormGroup
+			- FormArray
+			- FormControl
+
+Step 1
+	- Import and add the ReactiveFormsModule in app.module.ts
+	- if we have created a module then we have to import it there and not in app.module
+step 2
+	-Create the form in app.component.html
+		- FormGroup: We need to use the directive FormGroup for the entire form and give it name
+		- FormControlName: Every form field should have a "formControlName" attribute
+step 3 
+	- Inject thr FormBuilder in constructor
+
+Step 4
+	- create the form instance
+		- thisrefFrom=formBuilder.group({
+		fname:new FormControl(),
+		lname:new FormContro()
+		)};
+
+Which Is better FormGroup or FormBuilder
+	-FormBuilder is preferred
+	- It break down your form into smaller pieces of code
+		- which isreusable/simple to maintain

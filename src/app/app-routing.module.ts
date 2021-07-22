@@ -16,11 +16,16 @@ import { SearchComponent } from './search/search.component';
 import { SuperAdminGuard } from './super-admin.guard';
 import { UnsavedGuard } from './unsaved.guard';
 import {AddCustomerComponent} from './customers/add-customer/add-customer.component'
+import { LoantypesComponent } from './loantypes/loantypes.component';
 
 const routes: Routes = [
   {
     path: 'product',
     component: ProductComponent
+  },
+  {
+    path: 'loantype',
+    component: LoantypesComponent
   },
   {
     path: 'product/:id/photo/:photoId', component: ProductComponent
