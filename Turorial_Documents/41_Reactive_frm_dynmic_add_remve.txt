@@ -1,0 +1,17 @@
+ addUser() {
+    let userArr = this.addLoadTypeForm.get('users') as FormArray;
+    let newUser = this.formbuilder.group({
+      'name': 'sss',
+      'age': '222',
+      'dept': '2333'
+    })
+    alert("")
+    userArr.push(newUser);
+  }
+
+  removeUser(i:any) {
+    alert(i)
+    let arr = this.addLoadTypeForm.get('users') as FormArray;
+
+    arr.removeAt(i);
+  }

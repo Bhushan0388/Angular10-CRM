@@ -1,25 +1,73 @@
 <p>loantypes works!</p>
 
 <form [formGroup]="addLoadTypeForm">
-    <div class="form-group">
-        <label>
-            Loan Name
-        </label>
-        <input type="text" formControlName="loanName">
-    </div>
-    <div class="form-group">
-        <label>
-            Loan Type
-        </label>
-        <input type="text" formControlName="loantype">
-    </div>
-    <div class="form-group">
-        <label>
-            descriptions
-        </label>
-        <textarea formControlName='loanDescription'></textarea>
-    </div>
+    <table>
+        <tr>
+            <td>
 
+                <div class="form-group">
+                    <label>
+                        Loan Name
+                    </label>
+                    <input type="text" formControlName="loanName">
+                    <!-- <div class="text-danger" *ngIf="addLoadTypeForm.get('loanName').hasError('required') && addLoadTypeForm.get('loanName').touched">Loan Name is required</div> -->
+                    <div class="text-danger"
+                        *ngIf="addLoadTypeForm.controls['loanName'].errors?.required && addLoadTypeForm.controls['loanName'].touched">
+                        Loan Name is required</div>
+                    <div class="text-danger"
+                        *ngIf="addLoadTypeForm.controls['loanName'].errors?.minlength && addLoadTypeForm.controls['loanName'].touched">
+                        Minmum length should be 10</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label>
+                        Loan Type
+                    </label>
+                    <input type="text" formControlName="loantype">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="form-group">
+                    <label>
+                        descriptions
+                    </label>
+                    <textarea formControlName='loanDescription'></textarea>
+                </div>
 
-    <button type="button" (click)="addLoanType()">Add Button</button>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td>
+                <div class="form-group" formArrayName="users">                   
+                    <label>Users</label>
+                    <div *ngFor="let userFormGroup of userFormGroups.controls; let i=index">
+                        <input type="text" [formControlName]="i">
+                           <button type="button" (click)="removeUser(i)">Remoce User Name</button>
+                    </div>
+                </div>
+            </td> 
+        </tr> -->
+        <tr>
+            <td>
+                <div class="form-group" formArrayName="users">
+                    <label>test</label>
+                    <div ngFor="let userFormGroup of userFormGroups.controls; let i =index" formGroupName="i">      
+                        <input type="text" formControlName="name">  
+                        <input type="text" formControlName="age">  
+                        <input type="text" formControlName="dept">  
+                        <button type="button" (click)="removeUser('name')">Remove User Name</button>                
+                    </div> 
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button type="button" (click)="addLoanType()" [disabled]="!addLoadTypeForm.valid">Add Button</button>
+    <button type="button" (click)="resetform()">reset</button>
+    <button type="button" (click)="addUser()">Add User Name</button>
 </form>
+<!-- <div>{{userdata|json}}</div> -->
