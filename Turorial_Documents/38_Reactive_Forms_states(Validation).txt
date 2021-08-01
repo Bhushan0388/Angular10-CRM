@@ -1,8 +1,0 @@
-Form State
-	- ng-valid
-	- ng-invalid
-	- ng-pending
-	- ng-pristine
-	- ng-dirty
-	- ng-untouched
-	- ng-touched
