@@ -1,0 +1,8 @@
+Read Reactive Forms Values
+	- Get Value of Entire Form
+		this,addLoanTypeForm.value
+	- Get Values of specific Form Control
+		this,addLoanTypes.Form.get('loanName').value
+	- Get values on changes - which needs to be subscibe
+		this.addLoanTypeForm.valueChanges
+

@@ -1,0 +1,21 @@
+Setting the values of entire form in one go
+
+	this.loantypeForm new FormGroup({
+	"LoanName': new FormControl('Value Here')
+	'loanDescription': new FormControl('Value Here')
+	})
+
+Setting the form values using setValue
+	- by creating object of form and then setvalue
+	const loanObj {
+		LoanName:'Value1'
+		LoanDescription :'Value2'
+	}
+	this.addLoaneTypeForm.setValue(loanObj);
+
+We can use any ways to set the values.
+	- Set values requires all data/values for all the field\keys
+
+PathValues we dont need to pass all the field/keys
+	 We dont have to pass all the keys/feld.	
+	Only 

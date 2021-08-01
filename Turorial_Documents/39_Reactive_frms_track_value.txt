@@ -1,0 +1,12 @@
+Track Value changes
+	- reset form
+	- valueChanges is yet another important property of forms or FormControl
+	- valueChanges return Observable
+	- We need to subscribe to the Observable to read the value
+	- value Changes is property in Abstract COntrol
+	- Value cahnges wil emit an Event every time there is any change in the values of the control changes
+
+ex: this.registerForm.valueChanges()
+	this.formName.get('email').valueChanges.subscribe(data => {
+		console,log(data);
+	})
