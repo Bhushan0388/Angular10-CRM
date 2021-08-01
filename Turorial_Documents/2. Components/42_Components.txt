@@ -1,0 +1,16 @@
+How to create angular components
+	- ng g c <component name>
+
+How do we use ANgular components
+	- can we pas custom selector name ? yes.
+	- Use the selector tag as directive.
+
+How do you use ANgular components from different modules?
+	-User Module
+		- component -> list-user
+	- IMport the custom/newly created module into app module
+	- Export the respective components that we want to use outside the module
+
+How doese ANgular component communcate
+	- Using @Input and @Output directibe
+	- Using Services

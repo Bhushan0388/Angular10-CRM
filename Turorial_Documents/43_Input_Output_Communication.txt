@@ -1,0 +1,15 @@
+43_Input_Output_Communication
+	- Parent/child -> Parent --> sending data to child
+	- We will send data from list- user -> Input  -> filters-users
+	- list-user -<- Output <- filter users
+
+@INput
+	-We define in parent html with property binding on the childe selector
+		<app-filter-users [<InputName>]="<Our_values"></app-filter-users>
+	-  We define the value in parent component
+		  Cname='New' 
+	- In child, we accept using below syntax
+		  @Input()
+		  <InputName>?: String ;
+	- In child, now we bind it in html as below.
+		<h1> we are inside the fiter {{<Anyname>}}</h1>
