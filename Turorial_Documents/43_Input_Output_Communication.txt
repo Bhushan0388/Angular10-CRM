@@ -13,3 +13,24 @@
 		  <InputName>?: String ;
 	- In child, now we bind it in html as below.
 		<h1> we are inside the fiter {{<Anyname>}}</h1>
+
+@Output
+	- Let say if we want to update the value from child to parent. we will first add below event in child HTML page
+		<button type="button" (click)="updateuser()">Update user</button>
+	- Then in child component we use emit keyword to emit the data in parent.
+		  updateuser(){
+  			  const userobj={user:10,username:'Bhushan Khaladkar'};
+    
+   			 this.updatedlist.emit(userobj);
+ 			 }
+	- the to knw above state to emit we use below syntax in same child component  ts file
+			  @Output()
+			  updatedlist= new EventEmitter();
+	- To recieve th file in parent we use event databinding with same name as the emiiter name in HTML page. We can write any function name inside it.
+	- We have to pass $event in it. PFB data
+		<app-filter-users  (updatedlist)="UpdatetheUser($event)"></app-filter-users>
+	- IN parent component we use below syntax to bind it
+		UpdatetheUser(event:any){
+		    this.user=event;
+
+  		}

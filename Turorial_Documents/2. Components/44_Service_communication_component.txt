@@ -1,0 +1,21 @@
+Service
+	- We create a folder
+	- use below command
+		ng g s <service_name>
+	- In app.module.ts we need to import Httpclient module
+		import{HttpClientModule} from '@angular/common/http';
+	- Also inject it in below imprts
+		@NgModule({
+  		  imports: [
+   			  BrowserModule,
+  			  AppRoutingModule,
+  			  UsersModule,
+ 			   HttpClientModule
+ 		 ],
+	- Now import the HttpCLinet in Service
+		import {HttpClient} from  '@angular/common/http';
+	- Then inject it in constructor.
+		constructor(private httpclinet: HttpClient) { }
+	- If we want to consume this service we need to import it in that component 
+	- Then inject it in its constructor.
+
