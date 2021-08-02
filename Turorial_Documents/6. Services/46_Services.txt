@@ -1,0 +1,34 @@
+What is dependency injection?
+	- Its an appliction design pattern
+	- It allows us to ability to add functionality of component at runtime
+	
+Services
+	- It alows us to create reusable common shared functioanlity between various modules and components
+	- Servies are singleton
+	- Services are injected into application using Dependency injectionn mechanism
+	- We need to create and inject service in component where we want to use them
+	- Services are commonly used for making HTTP request to our endpoints APIs to request and recieve the response
+	- A service can have a value, methods or combination of both.
+
+How to generate Service
+	- ng g service <service_name>
+
+Where should we keep it.
+	- Create a single folder to place all services
+
+What's inside a service file?
+	- @Injectable
+		- Dependency Injection Mechanism
+	- providerIn
+		- Its available wherever we inject it
+
+Where can we inject service?
+	- We can inject in any components
+
+DO we need to import it in any of the module file?
+	- No
+	- We only import it in component.
+
+- Import the service in component
+- Create and instance in the constructor
+- then call the menthod using instance of the service.

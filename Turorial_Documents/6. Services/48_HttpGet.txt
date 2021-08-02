@@ -1,0 +1,19 @@
+We need to get method
+- We can pass header using below command 
+
+	const headers = new HttpHeaders({
+	      'content-type': 'application/json charset=utf-8',
+ 	     'authenticationToken': '123456'
+	    });
+
+and then use this header in our http request
+	return this.http.get('https://jsonplaceholder.typicode.com/users', {headers: headers,params:params});
+
+Same with the Httpparams
+	  const params= new HttpParams()
+  	  .set('pageSize',10)
+   	 .set('pageOptions',100);
+
+- By default all http returns observable
+
+

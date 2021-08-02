@@ -18,6 +18,9 @@ import { AdminEditComponent } from './admin-edit/admin-edit.component';
 import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { AdminManageComponent } from './admin-manage/admin-manage.component';
 
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CommonInterceptor } from './common.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,11 +40,14 @@ import { AdminManageComponent } from './admin-manage/admin-manage.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [{
-    provide:LocationStrategy, useClass:PathLocationStrategy
-  }],
+    provide: LocationStrategy, useClass: PathLocationStrategy
+  },
+  { provide: HTTP_INTERCEPTORS, useClass: CommonInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

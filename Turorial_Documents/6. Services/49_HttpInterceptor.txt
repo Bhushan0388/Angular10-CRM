@@ -1,0 +1,22 @@
+Http Interceptors
+	- Intercept any outgoing request so we can add more details
+		-Authentication Tokens
+		- Headers
+			- username
+			- password
+		- Tokens
+	- Interceptsand handles any httprequest and response
+	- Most interceptors transform the outgoing request before passing it to the next interceptor in the chain, by calling next.handle(transformedReq)
+	- It transform the response event stream as well, by applying additional RxJS operatr on the stream returned by next.handle
+
+How to generate HTTP interceptor
+	- ng g interceptor <name>
+
+in app.module.ts - we have to add it in providers
+	providers: [
+		  { provide: HTTP_INTERCEPTORS, useClass: CommonInterceptor, multi: true }
+  		],
+
+
+
+

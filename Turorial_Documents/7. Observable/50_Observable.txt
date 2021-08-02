@@ -1,0 +1,22 @@
+Observable
+	- It is sequence of data that gets emmited time to time.
+	- It makes use of observable as an interface to handle a varity of common asynch operations
+	- They are used frequently in ANgular and are recommended technique for event handling asynchronouss programming and handing multiple values
+	- An observable can deliver multple values of any type - literals, message or events depending on the context.
+
+Observer
+	-When we create an Observable, we keep track on the obsevable using Observer.
+	- Observer is continously listening to Observable
+	- We can control when to start and end listening to the observable using Observer
+
+Observer has 3 methods
+	- next()
+	- error()
+	- complete()
+
+Subscribe
+	- Whenever we have obserbale we have to subscribe it.
+	-- When we get new data.
+
+toPromise
+	- no need for new data

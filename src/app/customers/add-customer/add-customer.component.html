@@ -1,17 +1,38 @@
 <form #addCustomerForm="ngForm" (submit)="addCustomer(addCustomerForm)">
-  <input type="text" [(ngModel)]="firstname" name="firstname" placeholder="First Name" minlength="10">
- 
-  <br />
-  <input type="checkbox" [(ngModel)]="terms" name="terms" required>Accept terms and Conditions
-  <br />
-  <select [(ngModel)]="customerType" name="customerType">
-    <option value="1">Test</option>
-    <option value="2">Test2</option>
-  </select>
-  <br />
-  <textarea [(ngModel)]="descriptions" name="descriptions" required></textarea>
-  <br/>
-  <button type="submit" class="btn btn-success"  [disabled]="!addCustomerForm.valid">Add Customer </button>
-  <button type="submit" class="btn btn-warning" (click)="reset(addCustomerForm)">reset </button>
-  <button type="submit" class="btn btn-warning" (click)="loadvalues(addCustomerForm)">reset </button>
+  <div class="container" >
+    <div class="row" style="margin: 10px;"> 
+      <div class="col-md-3">
+        <input type="text" [(ngModel)]="firstname" name="firstname" placeholder="First Name" minlength="10">
+      </div>
+    </div>
+    <div class="row" style="margin: 10px;">
+      <div class="col-md-3">
+        <input type="checkbox" [(ngModel)]="terms" name="terms" required>Accept terms and Conditions
+      </div>
+    </div>
+    <div class="row" style="margin: 10px;">
+      <div class="col-md-3">
+        <select [(ngModel)]="customerType" name="customerType">
+          <option value="1">Test</option>
+          <option value="2">Test2</option>
+        </select>
+      </div>
+    </div>
+    <div class="row" style="margin: 10px;">
+      <div class="col-md-3">
+        <textarea [(ngModel)]="descriptions" name="descriptions" required></textarea>
+      </div>
+    </div>
+    <div class="row" style="margin: 10px;">
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-success" [disabled]="!addCustomerForm.valid">Add Customer </button>
+      </div>
+      <div class="col-md-2">
+        <button type="reset" class="btn btn-warning" (click)="reset(addCustomerForm)">reset </button>
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-warning" (click)="loadvalues(addCustomerForm)">reset </button>
+      </div>
+    </div>
+  </div>
 </form>

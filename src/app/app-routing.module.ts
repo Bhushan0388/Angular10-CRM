@@ -17,6 +17,8 @@ import { SuperAdminGuard } from './super-admin.guard';
 import { UnsavedGuard } from './unsaved.guard';
 import {AddCustomerComponent} from './customers/add-customer/add-customer.component'
 import { LoantypesComponent } from './loantypes/loantypes.component';
+import { EditCustomerComponent } from './customers/edit-customer/edit-customer.component';
+import { DeleteContactComponent } from './contacts/delete-contact/delete-contact.component';
 
 const routes: Routes = [
   {
@@ -83,6 +85,12 @@ const routes: Routes = [
   { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
   {
     path: 'customers/add-customer', component: AddCustomerComponent
+  },
+  {
+    path: 'customers/edit-customer', component: EditCustomerComponent
+  },
+  {
+    path: 'customers/delete-customer', component: DeleteContactComponent
   },
   {
     path: '**',
