@@ -1,0 +1,20 @@
+WHat is reactive Programming 
+	- It is a new way of building apps.
+	- Our app will react to changes and handle data stream rather than we writing  each handling separtly
+
+WHat is RxJs?
+	- RxJS is a library help us in making asynchronous call and implement  callback mechanism easily using observables
+
+RxJS consist of 3 main things
+	- Observable	
+	- Satelite  data types - Observers, Schedulers, Subjects
+	- Operators
+		- Array methods
+			- map
+			- filter
+			- reduce
+	- Helps us in Data Streams
+
+Observable
+	- Its a data stream
+		- 

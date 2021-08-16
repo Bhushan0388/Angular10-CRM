@@ -1,0 +1,31 @@
+Angular Testing
+	- Unit Testing is a type of software testing where we test individual components of an application.
+	- Unit testing is performed using Jasmine and karma 
+		 Jasmine is the testing framework used for writing the test
+		- Its a runner ..Karma is used to run tests
+	- We can also use TestBed and async to make testing asynchronous code, components, directives or services easier
+
+What is Karma and Jasmine?
+	Karma is a tool of running the tests on browsers it lets us spawn brwsers and run jasmine test inside of them
+	Jasmine is a testing framework for javascript programming lang that supports behaviour driven development(BDD) software devlopment practice.
+	
+
+How to install Karma using npm
+	npm install karma --save-dev 
+
+How do we define the spec file in jasmine
+	- spec in Jasmine represents a test case inside the test suite
+	- We can define the spec by calling the global jasmine function 'it', which like 'describe' tae a string and function
+
+describe("Suit Name", function(){
+	it("test spec, function(){
+		expect(expression).toEqual(true);
+	});
+});
+
+what are the comman matcher you have used in jasmine
+	toBeArray(), toBeArrayOfBooleans(),toBeFalse() etc ..
+
+What do you inderstands by headless browsers?
+	A headless browser, a browser without any kind graphical user interface(GUI) provides computerized control of a web  page in an enviornment alike to popular web browser but is performed through a command line interface or manaing network communications.
+	They are esplly usefl for examining web oages as they can render and understand HTML the very way a browser would, including styling components such as page layout, color, font selection and executions of jabascript and ajax which are usually not possible when using other testing methds

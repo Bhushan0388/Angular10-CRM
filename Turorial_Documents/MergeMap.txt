@@ -1,0 +1,14 @@
+Flattening Operator
+	MergeMap (combine all obseravble data)
+		it means we subscibe 2 times as we will have multiple time observable data
+		Maps each value to an Observable, then flattens all of these inner Observable using mergeAll
+		map + mergeAll = MergeMap
+
+
+	ConcateMap (it will combine data sequentially)
+	SwtchMap 
+		In this it cancel the older request and takes only latest
+
+flatMap/mergeMap - creates an Observable immediately for any source item, all previous Observables are kept alive
+concatMap - waits for the previous Observable to complete before creating the next one
+switchMap - for any source item, completes the previous Observable and immediately creates the next one

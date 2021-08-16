@@ -1,0 +1,39 @@
+Jasmine is a free and open source BDD framework
+	- BDD : Beahviour driven development framework
+
+Basic concpects
+	
+Describe 
+	- GLobal Function describe of Jasmine
+		- Two parameters  : String and function
+	 Suite of Test scripts
+		Ex:  describe("I want ot test Login", function{
+
+	})
+fdescribe: it will focused test script
+we use ng test
+
+It (Specs)
+	- Specs are defined by calling th global Jasmine function it, which also take two paramters string and function.
+	- There can be muliple IT statement inside the describe
+	EX: 
+		Ex:  describe("I want ot test Login", function{
+		it("check login screen", func){
+		}
+	})
+
+Expect
+	- Expectation are built with the function expect which takes a value, called the actual.
+
+		Ex:  describe("I want ot test Login", function{
+		it("check login screen", func){
+		var tax - 10;
+		expect(tax).toBe(10); // asserting the value 
+		}
+	})
+
+Matcher :
+	Its is chained with Macter function which takes expected values
+
+
+

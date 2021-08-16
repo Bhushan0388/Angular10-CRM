@@ -18,5 +18,9 @@ Subscribe
 	- Whenever we have obserbale we have to subscribe it.
 	-- When we get new data.
 
+Hot and Cold Obsevable
+	When the data is produced inside the Observable, it is called the cold Observable. 
+	When the data is produced outside the Observable, it is called hot Observable.
+
 toPromise
 	- no need for new data

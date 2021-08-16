@@ -1,0 +1,23 @@
+Javascript Operators
+
+Conditional Operator
+ternary
+Arithetic
+Comparison
+Logical Operator
+Assignment Operators
+TypeOf
+
+Unary (+) Operator : is used to convert variable to number
+
+var x= "100"; // string
+var y = +x // Number
+
+Comma Operator : it is use to evaluate eash of its operands from left to right and returns the value of the last operand
+
+var x=1;
+x=(x++,x)
+console.log(x); 2
+
+Advantage of COmma operator
+	 Usually used for multiple expressions

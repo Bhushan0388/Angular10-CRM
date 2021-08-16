@@ -1,0 +1,19 @@
+Javascript
+
+Spread/Rest Operator
+	- Three dots  we use it when we dont know how many paramters are expected.
+
+let stu= [1,2,3]
+let course =[4,5,6]
+
+let lab =[...stu, ...course]
+
+output will be
+lab  [1,2,3,4,5,6]
+
+for Function
+
+function readData(a,b){
+
+}
+redData(...course);

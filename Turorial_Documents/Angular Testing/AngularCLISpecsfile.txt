@@ -1,0 +1,18 @@
+TestBed, Async, componentfixture @angular/cre/testing
+	import from built-in module 
+Importing required Modules and components 
+BeforeEach Methods : 
+TestBed.configureTesting Module({
+})
+
+BeforeEach Method :
+	Befoe runing test specs we need some ground work
+		setting up componnt
+		- setting up data
+		- importing services
+
+Why there are 2 beforeEach
+	 what does it do?
+	What we can do it beforEach
+
+TestBed : Its a main utility to define our module , components etc.

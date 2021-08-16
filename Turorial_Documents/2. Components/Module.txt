@@ -1,0 +1,2 @@
+Modules:
+Module in Angular refers to a place where you can group the components, directives, pipes, and services, which are related to the application.

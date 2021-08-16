@@ -1,0 +1,40 @@
+Hoisting
+	Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution.
+
+what is javascript
+	It is client side scripting lang which is understood by browser and will be added in HTML code
+
+datatype
+Boolean
+String
+Number
+Nill
+Object
+Function
+Undefinde
+
+why to use NAN
+To check if it is not a number
+
+What is negative infinity?
+Negative number which is obtained from dividng the negative number by zero.
+ Used in calculation/Arthimatic operations
+
+Can javascript code be brokedn into multple files
+	Yes, it is possible to break using backlash'\'	
+
+Undeclare
+	 WHich dosent exiss or not declare
+
+Undefined 
+	which exsits but not assigned
+
+Prompt Box
+	its a poping window to get inputs from user
+
+This keyword
+	this keyword is used to refere current variable/ current object
+
+How can se change the style of an elemet from javascript
+	documnet.getElementByID('mytestid').className"testclass:
+

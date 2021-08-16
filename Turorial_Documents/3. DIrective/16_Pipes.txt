@@ -1,6 +1,12 @@
 Pipes
 	- Are used to transform the data 
+
+Pure Pipes
+when angular detects a change in the value or the parameters passed to a pipe.
 	
+Impure Pipe
+is called for every change detection cycle no matter whether the value or parameter(s) changes.
+
 Types:
 	- Built-in
 		- lowercase

@@ -1,0 +1,4 @@
+AAA pattern : design pattern
+	Arrange :  arranging everything like setup gorund work for working with test of execution
+	Act : Act on your unit test case (it statemnet)
+	Assert : Verifying the actual data of test result and expecte data

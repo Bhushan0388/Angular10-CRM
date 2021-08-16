@@ -1,0 +1,12 @@
+Karma and Jasmine details
+	Default Unit test port is 9876
+	to run commad we use ng test
+	It will open a new window browsers
+	We can choose and configure which browser we want to work with
+	Green bullet in the report means test has passed
+	Red color (X) mark means test has failed 
+	in usmmary line we can see counts of total spec passed and failed
+
+Karma.config.js
+	We can modify default brwser
+	We can change the port number )default(9876)

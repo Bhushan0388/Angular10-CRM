@@ -1,0 +1,93 @@
+What is E6
+ECMAScript 2015 is a sith major release of ECMA Language which come with a lot of new features and syntax for web writing aplication in javascritp
+Currenlty , not all browser support ES6, They support previous version
+So to write web applications in ES6 that will support all browsers we need tool like Babel and Webpack which comes in polifils
+
+Features of Es6
+	- Constant
+	- Blacked scope support for both (let and const)
+	 - Arrow Function
+	- Extended Parameter Handling
+	- Template Literals
+	 Extended Literals
+	- Enhanced Reggular Expression
+	- Enhanced Object Properties
+	 Support for Map/Set & WeakMap/WeakSet
+	- Promises , MetaProgramming, Internationalization and Localizaition
+
+what is use of let and const?
+let is mutable variable
+
+
+Explain Constants in ES6?
+	Constant is a sp type where variables whose content is not changed
+	We use const keyword
+	Constant in ES6 enable protection to overwrite a varibale value, imprve performance and helps programmers to write readable and cleaner code
+
+What are template literals in ES6?
+	Template literals are the string with embedded code and variable inside.
+	It allows concatenation and interpolation in much more comprehensive and clear win comparison with prior version on ECMAscript
+	Concatenation and interpolation  is done by backtick '' in single line.
+	To interpolate a variable simply put in to {} braces forwarded by $sign.
+		ex : let a ="Hello"			
+		       let b = "John"
+		       let c = `${a}${b}`
+			console.log (c) // Hello John
+
+Spread Operator
+	It is denoted by 3 dots (...)
+	if we dont know how many values will be presnt in an array that time we use it
+		let a  =[7,8,9]
+		let b =[1,2,3,...a,10]
+		console.log(b) //[1,2,3,7,8,9,10]
+
+	ex: function print (..,z){}
+
+What is Set in ES6
+	Set is the collection of unique values. The values could be also primitives or object references.
+	let set  = new Set()
+	set.add(1)
+	set.add('1')
+	set.add({key:'value'})
+	console.log(set(;//set {1,'1', object{key:'values'}}
+
+Explain WeakMap?
+WeakMap provide a way to extend object from the outside without interfering wiht garbage collection
+
+Explain Generator Function?
+	are function that can be exited and later reentered
+	Their context will be saved across reentrance
+	A function keyword is flowwed by asterisk defines a genrator function, which returns a generator object.
+	ex : 
+		function* generator(i){
+		yield  i;
+		yield i+10; }
+	
+		var get  generator(10);
+		console.log(gen.next().value); // output : 10
+		console.log(gen.next().value // 20 
+
+What is Babel?
+Its a javascript transipler
+It allow us to write ES6 code and converts it back in preES6 Javascript that browser support.
+
+Install babel?
+	npm install savedev babel-cli
+
+What is Webpack?
+It asllows us to run an enviornment that host babel
+Webpack is open source javascript module bundle that takes modules with dependencies and generate static assets reprsenting those modules
+
+Benifits of Webpack
+	It bundles multiple modules and get it inot single .js file
+	It comes with intgrated dev server
+	
+
+Destructing Assignment in Es6?
+It allows us to extract data from arrya and object into seprate variables
+
+	let fullname=['Bhushan','Khaladkar'];
+	let [firstname,lastname]=fullname;
+	console.log(firstname,lastname) //Bhushan Khaladkar
+
+
